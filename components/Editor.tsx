@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react';
 import MonacoEditor, { OnMount, loader } from '@monaco-editor/react';
 import type { editor } from 'monaco-editor';
@@ -90,7 +89,7 @@ export const Editor: React.FC<EditorProps> = ({ value, language, onChange, onSel
   };
 
   return (
-    <div className="flex-1 bg-aura-panel relative overflow-hidden">
+    <div className="h-full bg-aura-panel relative overflow-hidden">
       <MonacoEditor
         height="100%"
         language={language}
